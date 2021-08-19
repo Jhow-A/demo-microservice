@@ -1,0 +1,5 @@
+# Criar imagem a partir de um Dockerfile e um contexto (. é o diretório atual)
+docker build -t demomicroservice .
+
+# Criar e executar o container a partir da imagem (http://localhost:3000/weatherforecast)
+docker container run -it --rm -p 3000:80 --name demomicroservicecontainer demomicroservice
